@@ -1,0 +1,21 @@
+
+.numbers-nav {
+    all: unset;
+}
+
+.number {
+    all: unset;
+}
+
+.ul-numbers {
+    all: unset;
+}
+
+.pagebutton {
+    height: 10;
+    width: 10; 
+    all: unset;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 0px 6px;
+}
