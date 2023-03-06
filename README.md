@@ -1,3 +1,13 @@
+<p>This proyect is not finished yet</p>
+<br>
+<p>.add css(general)</p>
+<p>.add css(filters)</p>
+<p>.improve the filters</p>
+<p>.improve the search bar</p>
+<p>.improve the details section</p>
+<p>.add little details</p>
+
+
 ![HenryLogo](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png)
 
 # Individual Project - Henry Videogames
