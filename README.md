@@ -1,11 +1,12 @@
-<p>This proyect is not finished yet</p>
+# This proyect is not finished yet
 <br>
-<p>.add css(general)</p>
-<p>.add css(filters)</p>
-<p>.improve the filters</p>
-<p>.improve the search bar</p>
-<p>.improve the details section</p>
-<p>.add little details</p>
+<p>   To do list: </p>
+<p>.Add css(general)</p>
+<p>.Add css(filters)</p>
+<p>.Improve the filters</p>
+<p>.Improve the search bar</p>
+<p>.Improve the details section</p>
+<p>.Add little details</p>
 
 
 ![HenryLogo](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png)
