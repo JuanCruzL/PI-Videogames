@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import "../styles/SearchBar.css"
 import { useDispatch } from 'react-redux'
@@ -11,10 +12,6 @@ export default function SearchBar() {
 
     const [game, setGame] = useState("") 
 
-    function handleInputChange(e) {
-        console.log(e)
-        // setGame(e)
-    }
 
        function handleInputChange(e) {
         e.preventDefault()

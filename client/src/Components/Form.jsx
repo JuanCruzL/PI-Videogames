@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import React from 'react'
 import { Link, useHistory } from 'react-router-dom'
-import { postVideogame, getAllGenres, getPlatforms, GetAllVideogames } from '../Actions/actions'
+import { postVideogame, getAllGenres, getPlatforms } from '../Actions/actions'
 import { useDispatch, useSelector } from "react-redux"
 import Nav from '../Components/Nav'
 
@@ -37,7 +37,6 @@ const validate = (input) => {
     const history = useHistory()
     const genres = useSelector((state) => state.genres)
     const platforms = useSelector((state) => state.platforms)
-    const videogames = useSelector((state) => state.videogamesCopy)
     const [errors, setErrors] = useState({})
     const [input, setInput] = useState({
        name: '',

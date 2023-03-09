@@ -17,3 +17,37 @@
     position: relative;
 
 }
+
+.filters-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filterdbapiselect {
+    all:unset;
+    background-color: #8816fa;
+    border-radius: 10px;
+}
+
+.option {
+    all:unset;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.filterstext {
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px
+}
+
+.select {
+    all:unset;
+    background-color: #8816fa;
+    border-radius: 10px;
+    margin-left: 10px;
+}

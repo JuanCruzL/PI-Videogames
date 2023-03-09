@@ -1,3 +1,4 @@
+/* eslint-disable no-unreachable */
 import axios from "axios";
 
 export const GetAllVideogames = () => {
@@ -79,8 +80,9 @@ export function getGameById(id) {
         payload: videogameid,
       });
     };
+  // eslint-disable-next-line no-unreachable
   } catch (err) {
-    console(err);
+    console.log(err);
   }
 }
 

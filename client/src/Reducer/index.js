@@ -1,3 +1,4 @@
+/* eslint-disable no-fallthrough */
 const initialstate = {
   videogames: [],
   videogamesCopy: [],
@@ -73,6 +74,7 @@ export default function reducer(state = initialstate, action) {
           ...state,
           videogames: state.videogamesCopy,
         };
+
     case "SORT_BY_NAME":
       let sortbyname = state.videogamesCopy;
       if (action.payload !== "-") {
@@ -100,7 +102,7 @@ export default function reducer(state = initialstate, action) {
       }
       return {
         ...state,
-        videogames: action.payload === "-" ? state.videogamesCopy : sortbyname,
+        videogames: action.payload === "-" ? state.videogamesCopy : sortbyname
       };
     case "FILTER_API_DB":
       let filterdb = state.videogamesCopy.filter((e) => e.createdInDb === true);

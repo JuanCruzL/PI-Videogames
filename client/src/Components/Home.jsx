@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -85,30 +86,38 @@ export default function Home() {
         <button onClick={(e) => handleClick(e)}>
           Volver a cargar los videojuegos
         </button>
-        <div>
-          <select onChange={(e) => handleFilterApiorDatabase(e)}>
-            <option value="ALL">all</option>
-            <option value="DB">data base</option>
-            <option value="API">api</option>
+        <div className="filters-container">
+          <div className="filterstext"> filter api/db
+          <select onChange={(e) => handleFilterApiorDatabase(e)} className="filterdbapiselect">
+            <option value="ALL" className="option">all</option>
+            <option value="DB" className="option">data base</option>
+            <option value="API" className="option">api</option>
           </select>
-          <select onChange={(e) => handleSortName(e)}>
-            <option value="-">-</option>
-            <option value="A-Z">A-Z</option>
-            <option value="Z-A">Z-A</option>
+          </div>
+          <div className="filterstext">alphabetical order
+          <select onChange={(e) => handleSortName(e)} className="select">
+            <option value="-" className="option">-</option>
+            <option value="A-Z" className="option">A-Z</option>
+            <option value="Z-A" className="option">Z-A</option>
           </select>
-          <select onChange={(e) => handleSortRating(e)}>
-            <option value="-">-</option>
-            <option value="Higher">Higher</option>
-            <option value="Lower">Lower</option>
+          </div>
+          <div className="filterstext"> sort by rating
+          <select onChange={(e) => handleSortRating(e)} className="select">
+            <option value="-" className="option">-</option>
+            <option value="Higher" className="option">Higher</option>
+            <option value="Lower" className="option">Lower</option>
           </select>
-          <select className='select'  onChange={e => handleFilterByGenre(e)}>
-                  <option value="All">All</option>
+          </div>
+          <div className="filterstext"> filter by genre
+          <select onChange={e => handleFilterByGenre(e)} className="select">
+                  <option value="All" className="option">All</option>
                {
                   genres.map(g => (
-                     <option key={g.id} value={g.name}>{g.name}</option>
+                     <option key={g.id} value={g.name} className="option">{g.name}</option>
                      ))
                }
                </select>
+          </div>
         </div>
         <div className="card-containerBig">
           <div className="card-container">
