@@ -1,7 +1,10 @@
 # this is a project that i built when studying at the Henry Bootcamp
 <br>
 <p>Here is the deploy: https://pi-videogames-front-pi-videogames.up.railway.app</p>
-
+<br>
+<h1> I am actually working on a better version of this project with Typescript, Next.js and graphQL
+<br>
+<br>
 
 ![HenryLogo](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png)
 
