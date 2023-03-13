@@ -4,7 +4,10 @@ import "../styles/Page.css"
 
 export default function Page({ videogamesPerPage, allvideogames, page }) {
   const pageNum = [];
-
+  window.scrollTo({
+    top:0,
+    behavior:"smooth",
+  })
 
   for (let i = 1; i <= Math.ceil(allvideogames / videogamesPerPage); i++) {
     pageNum.push(i);

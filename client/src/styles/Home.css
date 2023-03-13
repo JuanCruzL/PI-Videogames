@@ -3,19 +3,37 @@
     width: 100%;
     background-color: #171717;
     position:relative;
+    scroll-behavior: smooth;
+}
+
+.button-container {
+    margin: 30px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+.reloadbutton{
+    all:unset;
+    color: white;
+    background-color: #8816fa;
+    border-radius: 10px;
+    padding: 5px
+}
+
+.reloadbutton:hover {
+    cursor: pointer;
 }
 
 
 .card-container {
     display:flex;
-    /* min-height: 700px;
-    width: 100vh; */
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
     position: relative;
-
 }
 
 .filters-container {

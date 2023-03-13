@@ -83,9 +83,11 @@ export default function Home() {
     return (
       <div className="home-container">
         <Nav></Nav>
-        <button onClick={(e) => handleClick(e)}>
+        <div className="button-container">
+        <button onClick={(e) => handleClick(e)} className="reloadbutton">
           Volver a cargar los videojuegos
         </button>
+        </div>
         <div className="filters-container">
           <div className="filterstext"> filter api/db
           <select onChange={(e) => handleFilterApiorDatabase(e)} className="filterdbapiselect">
