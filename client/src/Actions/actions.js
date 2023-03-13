@@ -1,10 +1,13 @@
 /* eslint-disable no-unreachable */
 import axios from "axios";
 
+// axios.defaults.baseURL="http://localhost:3001"
+axios.defaults.baseURL=""
+
 export const GetAllVideogames = () => {
   try {
     return async (dispatch) => {
-      var json = await axios.get("http://localhost:3001/videogames");
+      var json = await axios.get("/videogames");
 
       return dispatch({
         type: "GET_VIDEOGAMES",
@@ -19,7 +22,7 @@ export const GetAllVideogames = () => {
 export const getAllGenres = () => {
   try {
     return async (dispatch) => {
-      var genresjson = await axios.get("http://localhost:3001/genres");
+      var genresjson = await axios.get("/genres");
       return dispatch({
         type: "GET_GENRES",
         payload: genresjson.data,
@@ -32,7 +35,7 @@ export const getAllGenres = () => {
 
 export const getPlatforms = () => {
   return async (dispatch) => {
-    let json = await axios.get("http://localhost:3001/platforms");
+    let json = await axios.get("/platforms");
     return dispatch({
       type: "GET_PLATFORMS",
       payload: json.data,
@@ -72,7 +75,7 @@ export function getGameById(id) {
   try {
     return async (dispatch) => {
       var videogameid = (
-        await axios.get(`http://localhost:3001/videogames/${id}`)
+        await axios.get(`/videogames/${id}`)
       ).data;
       // console.log(videogameID.data)
       return dispatch({
@@ -90,7 +93,7 @@ export function getByName(name) {
   return async (dispatch) => {
     try {
       const gamebyname = await axios.get(
-        `http://localhost:3001/videogames?name=${name}`
+        `/videogames?name=${name}`
       );
       return dispatch({
         type: "GET_BY_NAME",
@@ -107,7 +110,7 @@ export const postVideogame = (payload) => {
     try {
       // console.log(payload)
       const json = await axios.post(
-        "http://localhost:3001/videogames",
+        "/videogames",
         payload
       );
       // console.log(json.data)

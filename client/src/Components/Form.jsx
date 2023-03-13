@@ -192,8 +192,6 @@ const validate = (input) => {
              <button className="submit" type="submit">Submit</button> 
           </div>
           </form>
-   
-        
        </div>
    )
  }
