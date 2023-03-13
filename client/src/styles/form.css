@@ -1,0 +1,44 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #8816fa;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formInput {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerDivGenres {
+    margin-bottom: 10px;
+}
+
+.divGenres {
+    display:flex;
+    flex-direction: row;
+    margin: 10px 0px;
+}
+
+.pGenres {
+    margin-right: 10px;
+}

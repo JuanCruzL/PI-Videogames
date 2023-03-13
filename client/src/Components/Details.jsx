@@ -96,7 +96,7 @@ export default function Details(prop) {
                 <div className="verticaldivider"></div>
               </div>
               <div className="descriptioncontainer">
-                <div className="description">
+                <div className="detailsdescription">
                   {videogame?.description?.replace(/<[^>]*>?/g, "")}
                 </div>
               </div>

@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react"
 import React from 'react'
-import { Link, useHistory } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 import { postVideogame, getAllGenres, getPlatforms } from '../Actions/actions'
 import { useDispatch, useSelector } from "react-redux"
 import Nav from '../Components/Nav'
+import "../styles/Form.css"
 
 const validate = (input) => {
     let errors = {}
@@ -121,9 +122,7 @@ const validate = (input) => {
     return (
        <div className="containerForm">
           <div className="navContainer">
-             <Link className="nav" to='/videogames'>
-                <Nav />
-             </Link>
+            <Nav />
           </div>
           <h1 className="title">CEATE YOUR VIDEOGAME!</h1>
           <form className="form" onSubmit={e => handleSubmit(e)}>
@@ -157,15 +156,15 @@ const validate = (input) => {
                 <p>Genres:</p>
                 { <select onChange={e => handleGenreSelect(e)}> {
                    genres.map(g => (
-                      <option value={g.name}>{g.name}</option>
+                      <option value={g.name} key={g.name}>{g.name}</option>
                    ))}
                 </select> 
                 }
                 <div className="containerDivGenres">
                   {input.genres.map(e => 
-                <div className="divGenres" value={e}>
+                <div className="divGenres" value={e} key={e}>
           
-                   <p>{e}</p>
+                   <p className="pGenres">{e}</p>
                    <button key={e} className="buttonX" onClick={() => handleGenresDelete(e)}>X</button>
                 </div>
              )}
@@ -174,7 +173,7 @@ const validate = (input) => {
                 <p className="pPlatforms">Platforms:</p>
                 { <select onChange={e => handlePlatformSelect(e)}> {
                    platforms.map(g => (
-                      <option value={g.name}>{g.name}</option>
+                      <option value={g.name} key={g.name}>{g.name}</option>
  
                    ))}
                    </select> 
