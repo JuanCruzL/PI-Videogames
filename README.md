@@ -1,12 +1,6 @@
-# This proyect is not finished yet
+# this is a project that i built when studying at the Henry Bootcamp
 <br>
-<p>   To do list: </p>
-<p>.Add css(general)</p>
-<p>.Add css(filters)</p>
-<p>.Improve the filters</p>
-<p>.Improve the search bar</p>
-<p>.Improve the details section</p>
-<p>.Add little details</p>
+<p>Here is the deploy: https://pi-videogames-front-pi-videogames.up.railway.app</p>
 
 
 ![HenryLogo](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png)
