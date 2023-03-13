@@ -17,7 +17,7 @@ export default function Page({ videogamesPerPage, allvideogames, page }) {
     <div className="page-container">
       <nav className="numbers-nav">
         <ul className="ul-numbers">
-          {pageNum?.map((n) => (
+          {pageNum.map((n) => (
             <li className="number" key={n}>
               <button className="pagebutton" onClick={() => page(n)}>
                 {n}

@@ -1,6 +1,4 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable react-hooks/exhaustive-deps */
-import React, { useRef } from "react";
+import React from "react";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getGameById } from "../Actions/actions";
@@ -10,7 +8,7 @@ import Nav from "./Nav";
 
 export default function Details(prop) {
   const dispatch = useDispatch();
-  const imageref = useRef(null);
+
   useEffect(() => {
     dispatch(getGameById(prop.match.params.id));
   }, []);
@@ -56,7 +54,6 @@ export default function Details(prop) {
             <div className="detailsbackground">
               <div className="detailsandimage">
                 <div
-                  ref={imageref}
                   id="poster"
                   className="videogameimage"
                   style={styles.poster}
@@ -69,27 +66,27 @@ export default function Details(prop) {
                   }
                   onMouseMove={(e) => calculate(e)}
                 ></div>
-                <div className="videogamename">{videogame?.name}</div>
+                <div className="videogamename">{videogame.name}</div>
                 <div className="divider"></div>
                 <div className="detailtitle">Genres:</div>
                 <div className="detailcontentcontainer">
-                  {videogame?.genres?.map((e) => (
+                  {videogame.genres.map((e) => (
                     <div className="detailcontent" key={e}>{`${e}`}</div>
                   ))}
                 </div>
                 <div className="detailtitle">Platforms:</div>
                 <div className="detailcontentcontainer">
-                  {videogame?.platforms?.map((e) => (
+                  {videogame.platforms.map((e) => (
                     <div className="detailcontent" key={e}>{`${e}`}</div>
                   ))}
                 </div>
                 <div className="detailtitle">Release Date:</div>
                 <div className="detailcontentcontainer">
-                  <div className="detailcontent">{videogame?.released}</div>
+                  <div className="detailcontent">{videogame.released}</div>
                 </div>
                 <div className="detailtitle">Rating:</div>
                 <div className="detailcontentcontainer">
-                  <div className="detailcontent">{videogame?.rating}</div>
+                  <div className="detailcontent">{videogame.rating}</div>
                 </div>
               </div>
               <div className="verticaldividercontainer">
@@ -97,7 +94,7 @@ export default function Details(prop) {
               </div>
               <div className="descriptioncontainer">
                 <div className="detailsdescription">
-                  {videogame?.description?.replace(/<[^>]*>?/g, "")}
+                  {videogame.description.replace(/<[^>]*>?/g, "")}
                 </div>
               </div>
             </div>
