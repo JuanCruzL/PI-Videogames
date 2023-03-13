@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getGameById } from "../Actions/actions";
@@ -27,7 +27,7 @@ export default function Details(prop) {
   };
 
   function calculate(event) {
-    let { clientX, clientY, target } = event;
+    let { clientX, clientY } = event;
     
 
     let height = event.clientY ;
