@@ -2,7 +2,7 @@
 <br>
 <p>Here is the deploy: https://pi-videogames-front-pi-videogames.up.railway.app</p>
 <br>
-<h1> I am actually working on a better version of this project with Typescript, Next.js and graphQL
+<h1> I am actually working on a better version of this project with Typescript, Next.js, graphQL and Redux Toolkit
 <br>
 <br>
 
