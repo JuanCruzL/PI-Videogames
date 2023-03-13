@@ -2,7 +2,7 @@
 import axios from "axios";
 
 // axios.defaults.baseURL="http://localhost:3001"
-axios.defaults.baseURL=""
+axios.defaults.baseURL="https://henry-cinema-fp-production.up.railway.app/"
 
 export const GetAllVideogames = () => {
   try {
