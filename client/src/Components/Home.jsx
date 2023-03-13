@@ -127,6 +127,7 @@ export default function Home() {
                   name={e.name}
                   image={e.image}
                   genres={e.genres}
+                  rating={e.rating}
                   id={e.id}
                   key={e.id}
                   createdInDb={e.createdInDb ? true : false}

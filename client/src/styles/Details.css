@@ -5,16 +5,12 @@
   position: absolute;
   justify-content: center;
   align-items: center;
-  /* padding: 40px */
 }
 
 .details-container {
-  /* margin-top: 20px; */
   display: flex;
   width: 100%;
   height: fit-content;
-  /* justify-content: center; */
-  /* align-items: center; */
   position: relative;
   padding: 80px;
 }
@@ -24,11 +20,10 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* align-items: center; */
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
   min-height: fit-content;
-  padding: 30px 50px;
+  padding: 50px 50px;
   border-radius: 20px;
   border: 2px solid #8816fa;
 }
@@ -122,5 +117,4 @@
   font-weight: 500;
   text-align: center;
   line-height: 30px;
-
 }

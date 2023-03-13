@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/Card.css";
 
-export default function Card({ id, image, name, genres, createdInDb }) {
+export default function Card({ id, image, name, genres, rating,createdInDb }) {
   let genres2 = genres.map(e => e.name ? e.name : e)
       return (
         <div className="Big-container">
@@ -20,6 +20,7 @@ export default function Card({ id, image, name, genres, createdInDb }) {
                       return <p key={e}>{e}</p>;
                     })}
                   </div>
+                  Rating: {rating}
                 </div>
               </div>
             </div>

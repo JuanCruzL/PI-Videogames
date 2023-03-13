@@ -15,7 +15,8 @@
     height: 10;
     width: 10; 
     all: unset;
-    border: 1px solid black;
+    border: 1px solid #8816fa;
     margin: 5px;
     padding: 0px 6px;
+    color: #8816fa;
 }

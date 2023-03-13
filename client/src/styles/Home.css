@@ -36,18 +36,30 @@
     border-radius: 10px;
 }
 
-.filterstext {
+.filterstext{
     color:white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 10px
+}
+
+.filterstext:nth-child(n + 2) {
+    margin-left: 40px;
 }
 
 .select {
     all:unset;
     background-color: #8816fa;
     border-radius: 10px;
-    margin-left: 10px;
+    min-width: 80px;
 }
+
+.page-container {
+    display: flex;
+    flex-direction: row; 
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
